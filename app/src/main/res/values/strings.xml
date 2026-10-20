@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">琉璃天气</string>
+    <string name="app_subtitle">Liquid Glass 动态天气中心</string>
+    <string name="tab_sunny">晴朗</string>
+    <string name="tab_windy">大风</string>
+    <string name="tab_rainy">暴雨</string>
+    <string name="tab_snowy">暴雪</string>
+    <string name="hourly_forecast_title">逐小时天气趋势</string>
+    <string name="temp_unit_toggle">切换温度单位</string>
+    <string name="immersive_mode_toggle">沉浸全屏预览</string>
+    <string name="exit_immersive_hint">轻触任意位置恢复顶部与底部控制栏</string>
+    <string name="gyro_tilt_hint">支持触控追光与3D微倾视差</string>
+    <string name="detail_sheet_title">7日趋势与光学气象分析</string>
+    <string name="close_button">关闭</string>
+</resources>

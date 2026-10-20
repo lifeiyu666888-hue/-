@@ -1,0 +1,6 @@
+{
+  "name": "琉璃天气",
+  "description": "iOS 18 Liquid Glass 风格全屏动态天气与3D光学玻璃卡片应用",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

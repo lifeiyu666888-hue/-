@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Glowing Golden Sun Core -->
+    <path
+        android:pathData="M44,44m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="40"
+                android:centerY="40"
+                android:gradientRadius="18"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFFFBEB" />
+                <item android:offset="0.55" android:color="#FFFDE047" />
+                <item android:offset="1.0" android:color="#FFF59E0B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Sun Rays -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M44,23L44,26M44,62L44,65M23,44L26,44M62,44L65,44M29,29L31.5,31.5M56.5,56.5L59,59M59,29L56.5,31.5M31.5,56.5L29,59"
+        android:strokeWidth="3.2"
+        android:strokeColor="#FFFDE047"
+        android:strokeLineCap="round" />
+    <!-- 3D Liquid Glass Cloud Body -->
+    <path
+        android:pathData="M37,68L70,68C76.6,68 82,62.6 82,56C82,49.9 77.4,44.9 71.5,44.1C69.8,36.1 62.6,30 54,30C44.1,30 36,38.1 36,48C36,48.5 36,49 36.1,49.5C30.9,50.6 27,55.2 27,60.8C27,64.8 30.2,68 34.2,68L37,68Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="30"
+                android:startY="30"
+                android:endX="78"
+                android:endY="68"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#EEFFFFFF" />
+                <item android:offset="0.6" android:color="#CCBAE6FD" />
+                <item android:offset="1.0" android:color="#9938BDF8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Specular Rim Border on Cloud -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M37,68L70,68C76.6,68 82,62.6 82,56C82,49.9 77.4,44.9 71.5,44.1C69.8,36.1 62.6,30 54,30C44.1,30 36,38.1 36,48C36,48.5 36,49 36.1,49.5C30.9,50.6 27,55.2 27,60.8C27,64.8 30.2,68 34.2,68L37,68Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#D9FFFFFF" />
+    <!-- Crystal Raindrops -->
+    <path
+        android:fillColor="#FF38BDF8"
+        android:pathData="M43,73L40,80M55,73L52,80M67,73L64,80"
+        android:strokeWidth="3"
+        android:strokeColor="#FF7DD3FC"
+        android:strokeLineCap="round" />
+</vector>
