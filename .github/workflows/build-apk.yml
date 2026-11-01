@@ -21,8 +21,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: 3. Install Android SDK
-        uses: android-actions/setup-android@v3
+      - name: 3. Configure Pre-installed Android SDK
+        run: |
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
 
       - name: 4. Enable INTERNET Permission for Live Weather API
         run: |
@@ -30,19 +31,14 @@ jobs:
             sed -i 's/<application/<uses-permission android:name="android.permission.INTERNET" \/>\n    <application/' app/src/main/AndroidManifest.xml
           fi
 
-      - name: 5. Install Gradle 8.10.2
+      - name: 5. Setup Gradle 8.11.1
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.10.2'
+          gradle-version: '8.11.1'
 
       - name: 6. Compile & Package APK
         run: |
-          if [ -f "./gradlew" ]; then
-            chmod +x ./gradlew
-            ./gradlew assembleDebug --stacktrace
-          else
-            gradle assembleDebug --stacktrace
-          fi
+          gradle assembleDebug --stacktrace
 
       - name: 7. Prepare APK Output
         run: |
@@ -59,5 +55,5 @@ jobs:
         with:
           tag_name: v2.0.${{ github.run_number }}
           name: "琉璃天气 iOS Liquid Glass APK v2.0.${{ github.run_number }}"
-          body: "云端自动安装 Android SDK 编译生成的琉璃天气安装包（LiuliWeather-iOS-LiquidGlass.apk），点击下方 Assets 即可直接下载安装。"
+          body: "云端自动编译生成的琉璃天气安装包（LiuliWeather-iOS-LiquidGlass.apk），点击下方 Assets 即可直接下载安装。"
           files: LiuliWeather-iOS-LiquidGlass.apk
